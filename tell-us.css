@@ -1,0 +1,159 @@
+.tell-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding-top: 50px;
+    height: 500px;
+    margin-bottom: 125px;
+}
+
+.tell-us-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+
+    font-family: 'Overpass', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    width: 650px;
+    position: relative;
+}
+
+h1{
+    font-family: 'Overpass', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    width: 770px;
+}
+
+.number-phone{
+    padding-top: 30px;
+}
+
+.email-adress{
+    padding-top: 30px;
+}
+
+.tell-us-sing-in{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+}
+
+.tell-txt{
+    display: flex;
+    flex-direction: column;
+
+    width: 525px;
+    justify-content: center;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.name-surname{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.name-text{
+    width: 220px;
+    height: 35px;
+
+    margin: 5px 0 15px 0;
+    padding: 0 10px 0 10px;
+    align-items: center;
+}
+
+.tell-email,
+.tell-phone,
+.tell-message{
+    width: 500px;
+    height: 35px;
+    margin: 5px 0 15px 0;
+    padding: 0 10px 0 10px;
+}
+
+.tell-message{
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+.label{
+    margin-bottom: 3px;
+    font-family: "Shantell Sans", system-ui;
+    font-weight: 580;
+    font-size: 18px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(99, 99, 99);
+    box-shadow: 3px 3px 10px #00000020;
+    transition: 0.3s ease;
+}
+
+input:hover{
+    background-color: #202020;
+}
+
+textarea{
+    border-radius: 5px;
+    border: 1px solid rgb(99, 99, 99);
+    box-shadow: 3px 3px 10px #00000020;
+    transition: 0.3s ease;
+}
+
+textarea:hover{
+    box-shadow: 3px 3px 10px #00000080
+}
+
+input,
+textarea {
+    font-size: 18px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.submit{
+    background-color: #393939;
+    color: white;
+    font-family: "Shantell Sans", system-ui;
+    font-size: 19px;
+    margin-top: 20px;
+
+    width: 260px;
+    height: 50px;
+}
+
+.submit-row{
+    align-items: flex-end;
+    width: 100%;
+}
+
+.number-phone,
+.email-adress{
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon,
+.mail-icon{
+    filter: brightness(0);
+    padding-right: 20px;
+    width: 30px;
+}

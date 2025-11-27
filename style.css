@@ -1,0 +1,158 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    font-family: 'Shirouga-trial';
+    src: url(Fonts/Shirouga-Trial.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    -ms-overflow-style: none;  /* 3. Для IE/Edge */
+    scrollbar-width: none;     /* 2. Для Firefox */
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    font-family: 'Shirouga-trial' sans-serif;
+
+    margin-left: 75px;
+    width: 50%;
+}
+
+.main-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42%;
+    height: 104vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.main-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.main-image::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; /* -1px, щоб перекрити будь-які щілини */
+    left: 0;
+    width: 100%;
+    height: 250px; /* Висота області злиття (можна регулювати) */
+    z-index: 10;
+}
+
+.red-title-text{
+    color:#ff003c
+}
+
+.second-container{
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.main-title{
+    font-size: 40px;
+    font-family: 'Shirouga-trial', sans-serif;
+    font-weight: bold;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+    user-select: none;
+}
+
+.container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title{
+    font-family: 'Overpass', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.under-title{
+    font-family: 'Overpass', sans-serif;
+    font-size: 22px;
+}
+
+.btn{
+    height: 65px;
+    width: 220px;
+    margin-top: 50px;
+    border: 0;
+    background-color: #393939;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    user-select: none;
+    border-radius: 8px;
+}
+
+.background-text{
+    position: relative;
+    color: white;
+}
+
+.background-text::before{
+    content: '';
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    z-index: -100;
+    background-color: #ff003c;
+    
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+}
+
+.btn:hover{
+    background-color: #202020;
+}
+
+
+.transition-divider{
+    height: 3px;
+    background-color: #ff2f5f;
+    background-color: #ff003c !important;
+    /* ЗМЕНШУЄМО АБО ПРИБИРАЄМО НЕПОТРІБНИЙ ПРОСТІР */
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px #ff2f5f; 
+    
+
+    margin-bottom: 50px; 
+    z-index: 100;
+}

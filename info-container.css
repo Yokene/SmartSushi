@@ -1,0 +1,60 @@
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 2px solid #ff4b75;
+    border-bottom: 2px solid #ff4b75;
+    background-color: #ff2f5f17;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.sushi-box-image{
+    height: 520px;
+    width: auto;
+    padding: 30px 0px 30px 0;
+    user-select: none;
+    transition: 0.5s ease;
+}
+
+.sushi-box-image:hover{
+    scale: 1.03;
+}
+
+.info-text{
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Overpass', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+h1{
+    font-family: 'Overpass', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    width: 770px;
+}
+
+.background-text-info::before{
+    content: '';
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    z-index: -100;
+    background-color: #ff003c;
+    top: 60%;
+    left: 50%;
+    
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+}
+
+.background-text-info{
+    color: white;
+    position: relative;
+}

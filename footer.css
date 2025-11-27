@@ -1,0 +1,65 @@
+footer{
+    background-color: #393939;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 0;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.footer-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.footer-email{
+    font-size: 22px;
+    padding-top: 10px;
+    color: #e4e4e4
+}
+
+.footer-copyright{
+    font-size: 22px;
+    padding-top: 10px;
+    color: #e4e4e4
+}
+
+.footer-desc{
+    font-size: 20px;
+    padding-top: 10px;
+    color: #989898;
+}
+
+
+.social-links{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 20px 0 0;
+    height: 33px;
+}
+
+.social{
+    font-size: 33px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.social.instagram:hover {
+    color: #e1306c; /* розовый Instagram */
+}
+
+.social.tiktok:hover {
+    color: #000000; /* чёрный TikTok */
+}
+
+.social.facebook:hover {
+    color: #1877f2; /* синий Facebook */
+}
